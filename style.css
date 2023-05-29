@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#logo img{
+    width: 100px;
+}
+#menu{
+    width: 100%;
+    text-align: center;
+}
+#menu ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+}
+#menu ul a{
+    text-decoration: none;
+    padding: 15px;
+    margin: 5px;
+    color: #06631a;
+    font-weight: bold;
+}
+#menu ul li{
+    padding: 15px;
+    margin: 5px;
+}
+#menu ul li :hover{
+    padding: 15px;
+    margin: 5px;
+    background-color: #06631a;
+    color: #fff;
+}
+.conteudo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.folder{
+    background-image: url("img/banner.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    height: 670px;
+    flex-direction: column;
+    color: #fff;
+    text-shadow: 1px 1px 2px #000 ;
+}
+.folder h1{
+    font-size: 55px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+.folder h2{
+    font-size: 35px;
+    margin-left: 30px;
+}
+.box-top{
+    display: flex;
+    height: 200px;
+    flex-direction: row;
+}
+.box1{
+    flex: 1;
+    background-color: #06631a;
+    display: flex;
+    justify-content: center;
+    
+}
+.box1 h3{
+    margin: 30px;
+    color: #fff;
+    font-size: 25px;
+}
+.box2{
+    flex: 1;
+    background-color: #068421;
+    display: flex;
+    justify-content: center;
+    
+}
+.box2 h3{
+    margin: 30px;
+    color: #fff;
+    font-size: 25px;
+}
+.box3{
+    flex: 1;
+    background-color: #07a128;
+    display: flex;
+    justify-content: center;
+   
+}
+.box3 h3{
+    margin: 30px;
+    color: #fff;
+    font-size: 25px;
+}
+main{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+main .artigo{
+    flex: 1;
+    margin: 20px;
+}
+main .artigo h3{
+    margin-left: 20px;
+    margin-top: 20px;
+    color: #06631a;
+}
+main .artigo .decoracao{
+    width: 50px;
+    height: 2px;
+    background-color: #06631a;
+    margin-left: 20px;
+}
+
+main .artigo .fotografia img{
+    width: 100%;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+main .artigo h4{
+    width: 100%;
+    margin-left: 20px;
+    margin-top: 20px;
+    color: #06631a;
+}
+
+.box-botton{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.box-footer{
+    flex: 1;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+.box-footer h3{
+    margin: 30px;
+    color: #fff;
+    font-size: 25px;
+}
+.box-footer img{
+    width: 300px;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+    header{
+        width: 100%;
+    }
+    #menu ul{
+        display: block;
+        list-style: none;
+        width: 100%;
+    }
+    #menu ul li{
+        background-color: #068421;
+        color: #fff;
+    }
+    #menu ul li a{
+        text-decoration: none;
+        color: #fff;
+    }
+    #menu ul :hover{
+        justify-content: center;
+        background-color: #06631a;
+    }
+   .box-top{
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    }
+    main{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .box-botton{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    footer{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
